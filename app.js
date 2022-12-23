@@ -10,6 +10,8 @@ app.use(express.static(__dirname + '/public'));
 app.set('views', __dirname + '/views');
 
 app.get('/', (req, res) => {
-    res.render('layout')
+    res.render('layouts')
 });
+
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
